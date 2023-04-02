@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-image: url(../imge/bird\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: cenetr;
+
+}
+.menu-bar{
+    width: 100%;
+    background-color:#BFF098;
+}
+.menu-bar nvar{
+    text-align: center;
+   
+   
+}
+.menu-bar nvar ul li{
+    color:black;
+    display: inline-block;
+    
+   
+   
+}
+ ul li a{
+    text-decoration: none; 
+    color:black;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+    display:inline-block;
+    padding:15px  ;
+    margin: 10px ;
+    font-size:12px;
+
+    
+    
+}
+ 
+
+  ul li a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color:#C33764  ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.9s;
+    
+    
+}
+
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color:#C33764  ;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+    transition: 0.9s;
+ 
+    
+}
+ul li:hover a::before{
+    width: 50%;
+}
+ul li:hover a::after{
+    width: 50%;
+}
+
+nvar ul li ul {
+    position: absolute;
+    background-color: #BFF098;
+    display: block;
+    
+   
+}
+ .sub-menu{
+    background-color: #BFF098;
+   display: block;
+    color: rebeccapurple;
+   
+   
+  
+   
+}
